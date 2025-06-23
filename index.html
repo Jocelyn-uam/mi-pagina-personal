@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ana Jocelyn Contreras Hernández - Comunicación Social</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1529336953121-43b9a4e1f9f4?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .carousel-inner img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .accordion-button {
+      background-color: #dee2e6;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero / Encabezado principal -->
+  <div class="hero">
+    <h1 class="display-4">Ana Jocelyn Contreras Hernández</h1>
+    <p class="lead">Estudiante de Comunicación Social en la UAM Xochimilco | Creativa y apasionada por las artes</p>
+  </div>
+
+  <!-- Carrusel de imágenes/intereses -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Mis Intereses</h2>
+    <div id="interesesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1350&q=80" class="d-block w-100" alt="Comunicación">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Comunicación</h5>
+            <p>El arte de conectar con el mundo y transformar realidades.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://img.freepik.com/vector-gratis/ilustracion-plana-dia-mundial-arte_23-2151260081.jpg?ga=GA1.1.418653591.1740639785&semt=ais_hybrid&w=740" class="d-block w-100" alt="Arte">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Artes</h5>
+            <p>Creatividad, expresión y sensibilidad única.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://img.freepik.com/psd-gratis/antecedentes-concepto-trabajo-equipo-3d_23-2151527886.jpg?ga=GA1.1.418653591.1740639785&semt=ais_hybrid&w=740" class="d-block w-100" alt="Creatividad">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Creatividad</h5>
+            <p>Una herramienta para soñar e innovar.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#interesesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#interesesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Acordeón de información personal -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Sobre Mí</h2>
+    <div class="accordion" id="infoPersonal">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="cvHeading">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#cvCollapse">
+            Curriculum Vitae
+          </button>
+        </h2>
+        <div id="cvCollapse" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            <strong>Nombre:</strong> Ana Jocelyn Contreras Hernández<br />
+            <strong>Formación:</strong> Estudiante de Comunicación Social en UAM Xochimilco<br />
+            <strong>Inicio:</strong> Trimestre de Otoño<br />
+            <strong>Idiomas:</strong> Español (nativo), Inglés (intermedio)<br />
+            <strong>Habilidades:</strong> Comunicación efectiva, creatividad, expresión artística, empatía, liderazgo.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="resumenHeading">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#resumenCollapse">
+            Resumen de Personalidad
+          </button>
+        </h2>
+        <div id="resumenCollapse" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Soy una persona soñadora, creativa, única y diferente. Me apasiona conectar con los demás a través de la comunicación y el arte. Mi empatía, amabilidad y un temperamento fuerte me hacen destacar en cualquier equipo. Creo en el poder de las ideas y en la expresión auténtica como motor de cambio.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer class="text-center py-4 bg-dark text-light">
+    &copy; 2025 Ana Jocelyn Contreras Hernández | UAM Xochimilco
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
